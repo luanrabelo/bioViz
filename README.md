@@ -1,2 +1,6 @@
-# bioViz
-Welcome to our scientific design repository, where we showcase our visually stunning maps, charts, and infographics on various scientific topics. Our creative illustrations prioritize accessibility, making science accessible to all. Explore and contribute to our open-source designs now!
+<p align="center">
+<img src="https://github.com/luanrabelo/bioViz/blob/stable/assets/bioViz.png" width="250" height="250">
+</p>
+
+Bem-vindo ao nosso repositório de design científico, onde mostramos nossos incríveis mapas, gráficos e infográficos sobre vários tópicos científicos. Nossas ilustrações criativas priorizam a acessibilidade, tornando a ciência acessível a todos. Explore e contribua com nossos projetos de código aberto agora!
+
