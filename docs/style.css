@@ -98,24 +98,26 @@ a:hover::before {
 .card-text{
      text-align: justify;
 }
-
-
-
-/*
-PagesSlides
-
+.card-footer, .card-header{
+  background-color: #0F0E0E25;
+}
+.carousel-item{
+  transition: transform 0.5s ease-in-out !important;
+}
 .PagesSlides {
-    height: 100vh;
     align-items: center;
     justify-content: center;
-    gap: 75px;
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: start;
 }
 .PagesSlidesText {
     align-items: center;
     justify-content: center;
 }
+
+
+/*
+PagesSlides
+
+
 
 
 
