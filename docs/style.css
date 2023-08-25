@@ -56,11 +56,11 @@ a:hover::before {
     background-color: #0F0E0E25;
 }
 .carousel-item {
-  transition: transform 1.5s ease-in-out;
+  transition: transform 0.95s ease-in-out;
 }
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
-  transition: opacity 1s 1.5s;
+  transition: opacity 0s 0.95s;
 }
 .PagesSlides {
     height: 95vh;

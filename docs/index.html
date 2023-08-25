@@ -24,44 +24,19 @@
     <title>bioViz</title>
   </head>
   <body class="bg-dark container-fluid">
+
     <header class="text-center">
       <div class="hr h1">bioViz</div>
-      <!--
-      <ul class="nav justify-content-end mt-5">
-          <li class="nav-item">
-            <div class="toggleWrapper">
-                <input type="checkbox" class="dn" id="dn">
-                <label for="dn" class="toggle">
-                    <span class="toggle__handler">
-                        <span class="crater crater--1"></span>
-                        <span class="crater crater--2"></span>
-                        <span class="crater crater--3"></span>
-                    </span>
-                    <span class="star star--1"></span>
-                    <span class="star star--2"></span>
-                    <span class="star star--3"></span>
-                    <span class="star star--4"></span>
-                    <span class="star star--5"></span>
-                    <span class="star star--6"></span>
-                </label>
-            </div>
-          </li>
-      </ul>
--->
       <div class="PagesSlides mt-5">
-        <img src="assets/bioViz.png" class="figure-img img-fluid rounded Logo" style="width: 70vh;" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
-        <!--<div style="font-size: 100%;" class="h1 text-white blockquote-footer mt-1 mb-1">by <a href="https://x.com/lprabelo" target="_blank">Luan Rabelo</a></div>-->
+        <img src="assets/bioViz.png" class="figure-img img-fluid rounded Logo" style="width: 75vh;" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
         <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 row-cols-xxl-1 gap-5 mt-5" style="align-items: center; justify-content: center;">
-          <button id="toPort" style="font-size: 1.5em;" class="btn btn-lg btn-outline-light col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-2" type="button" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300" data-aos-easing="ease-out-cubic">ver Portfólio</button>
-          <button id="toDesi" style="font-size: 1.5em;" class="btn btn-lg btn-outline-light col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-2" type="button" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300" data-aos-easing="ease-out-cubic">ver Designers</button>
+          <button id="toPort" style="font-size: 1.5em; vertical-align: middle;" class="btn btn-lg btn-outline-light col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-2" type="button" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300" data-aos-easing="ease-out-cubic">ver Portfólio <i style="font-size: 1.5em;" class="bi bi-arrow-down-circle-fill"></i></button>
+          <button id="toDesi" style="font-size: 1.5em; vertical-align: middle;" class="btn btn-lg btn-outline-light col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-2" type="button" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="300" data-aos-easing="ease-out-cubic">ver Designers <i style="font-size: 1.5em;" class="bi bi-arrow-down-circle-fill"></i></button>
         </div>
       </div>
-      <!--<div class="hr h1">by Luan Rabelo</div>-->
     </header>
+
     <main>
-
-    
-
     <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-2 row-cols-xxl-2 PagesSlides PagesSlidesText mb-5">
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 mb-1" data-aos="fade-down" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
         <img src="assets/img/OneWhite.png" class="img-fluid">
@@ -511,12 +486,13 @@
     </div>
     
     </main>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       $(document).ready(function() {
+        
+        AOS.init();
+
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
@@ -525,14 +501,14 @@
             scrollTop: $("#Portfolio").offset().top
           }, 3500);
         });
-        
+
         $("#toDesi").click(function() {
           $('html, body').animate({
             scrollTop: $("#Designers").offset().top
           }, 3500);
         });
-      });
 
+      });
     </script>
   </body>
 </html>
