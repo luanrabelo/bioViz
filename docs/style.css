@@ -59,6 +59,8 @@ a:hover::before {
     transition: transform 0.5s ease-in-out !important;
 }
 .PagesSlides {
+    display: flex;
+    height: 75vh;
     align-items: center;
     justify-content: center;
 }

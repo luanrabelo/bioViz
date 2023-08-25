@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta property="og:site_name" content="bioViz">
     <meta property="og:title" content="bioViz"/>
-    <meta property="og:description" content="bioViz: Design Cientifico" />
+    <meta property="og:description" content="bioViz: Design Cientifico e Análises de dados" />
     <meta property="og:image" itemprop="image" content="assets/bioViz.png">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
@@ -23,6 +25,7 @@
   </head>
   <body class="bg-dark container-fluid">
     <header class="text-center">
+      <div class="hr h1">bioViz</div>
       <!--
       <ul class="nav justify-content-end mt-5">
           <li class="nav-item">
@@ -45,21 +48,21 @@
           </li>
       </ul>
 -->
-      
-        <figure class="figure">
-          <img src="assets/bioViz.png" class="figure-img img-fluid rounded" style="width: 20em;">
-        </figure>
-        <div style="font-size: 100%;" class="h1 text-white blockquote-footer mt-1 mb-1">by <a href="https://x.com/lprabelo" target="_blank">Luan Rabelo</a></div>
+      <div class="PagesSlides mt-5" style="height: 75vh;">
+        <img src="assets/bioViz.png" class="figure-img img-fluid rounded" style="width: 25%; vertical-align: middle;">
+        <!--<div style="font-size: 100%;" class="h1 text-white blockquote-footer mt-1 mb-1">by <a href="https://x.com/lprabelo" target="_blank">Luan Rabelo</a></div>-->
+      </div>
+      <div class="hr h1">by Luan Rabelo</div>
     </header>
     <main>
 
-    <div class="hr h1">bioViz</div>
+    
 
     <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-2 row-cols-xxl-2 PagesSlides PagesSlidesText mb-5">
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 mb-1">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 mb-1" data-aos="fade-down" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
         <img src="assets/img/OneWhite.png" class="img-fluid">
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-1">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-1" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
         <blockquote class="blockquote">
           <div class="hr h1">Nature</div>
           <div class="h1 text-white">"Gráficos sofisticados são necessários para comunicar os resultados de pesquisas cada vez mais complexas e transdisciplinares."</div>
@@ -69,18 +72,16 @@
       </div>
     </div>
 
-    <hr class="mt-2 mb-2">
-
     <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-2 row-cols-xxl-2 PagesSlides PagesSlidesText mb-5">
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-1">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-1" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
         <blockquote class="blockquote">
           <div class="hr h1">bioViz</div>
           <div class="h1 text-white">A bioViz fornece serviços de análises e processamento de dados, além de elaboração de figuras científicas, como mapas, gráficos e infográficos, utilizados para divulgação científica.</div>
         </blockquote>
         <hr>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 mb-1">
-        <img src="assets/img/Two.png" class="img-fluid" style="transform: scaleX(-1);">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 mb-1" data-aos="fade-down" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
+        <img src="assets/img/Two.png" class="img-fluid">
       </div>
     </div>
 
@@ -91,7 +92,7 @@
 
       <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-4 row-cols-xxl-4">
 
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-right" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Genomas Circulares</strong></div>
             <div class="card-body">
@@ -140,7 +141,7 @@
         <!--
           Mapas
         -->
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-left" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Mapas</strong></div>
             <div class="card-body">
@@ -197,7 +198,7 @@
         <!--
           BioInformática
         -->
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-right" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Bioinformática</strong></div>
             <div class="card-body">
@@ -246,7 +247,7 @@
         <!--
           Árvores Filogenéticas
         -->
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-left" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Árvores Filogenéticas</strong></div>
             <div class="card-body">
@@ -295,7 +296,7 @@
         <!--
           Dados Socioeconômicos
         -->
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-right" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Análises de dados Socioeconômicos</strong></div>
             <div class="card-body">
@@ -343,32 +344,33 @@
         </div>
         <!--
           dataSUS
+        -->
        
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-left" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Análises dataSUS</strong></div>
             <div class="card-body">
               <div id="dataSUS" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/sus/EsquistossomosePA.png" class="card-img img-fluid figure-img">
-                    <figcaption class="figure-caption text-start"><i>Casos de Esquistossomose no Pará (2007-2023)</i></figcaption>
+                    <img src="assets/img/sus/susOne.png" class="card-img img-fluid figure-img">
+                    <figcaption class="figure-caption text-start">Diagramas produzidos por <b>Luan Rabelo</b> sob a Licença MIT</figcaption>
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/sus/RaivaPA.png" class="card-img img-fluid figure-img">
-                    <figcaption class="figure-caption text-start"><i>Casos de Raiva no Pará (2007-2021)</i></figcaption>
+                    <img src="assets/img/sus/susTwo.png" class="card-img img-fluid figure-img">
+                    <figcaption class="figure-caption text-start">Diagramas produzidos por <b>Luan Rabelo</b> sob a Licença MIT</figcaption>
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/genomes/Boleophthalmus_dussumieri.png" class="card-img img-fluid figure-img">
-                    <figcaption class="figure-caption text-start"><i>Boleophthalmus dussumieri</i></figcaption>
+                    <img src="assets/img/sus/susTree.png" class="card-img img-fluid figure-img">
+                    <figcaption class="figure-caption text-start">Diagramas produzidos por <b>Luan Rabelo</b> sob a Licença MIT</figcaption>
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/genomes/Mico_argentatus.png" class="card-img img-fluid figure-img">
-                    <figcaption class="figure-caption text-start"><i>Mico argentatus</i></figcaption>
+                    <img src="assets/img/sus/susOne.png" class="card-img img-fluid figure-img">
+                    <figcaption class="figure-caption text-start">Diagramas produzidos por <b>Luan Rabelo</b> sob a Licença MIT</figcaption>
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/genomes/Mico_saterei.png" class="card-img img-fluid figure-img">
-                    <figcaption class="figure-caption text-start"><i>Mico saterei</i></figcaption>
+                    <img src="assets/img/sus/susTwo.png" class="card-img img-fluid figure-img">
+                    <figcaption class="figure-caption text-start">Diagramas produzidos por <b>Luan Rabelo</b> sob a Licença MIT</figcaption>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#dataSUS" data-bs-slide="prev">
@@ -382,10 +384,12 @@
               </div>
             </div>
             <div class="card-footer">
-              <p class="card-text h5">Utilizar cores adaptadas para daltônicos em ilustrações cientificas é fundamental, pois isso não apenas torna a informação visualmente compreensível para todos, mas também promove a inclusão e a igualdade de acesso à informação.</p>
-              <p class="card-text mb-5 h5"><a style="color: #000000;" href="https://instagram.com/bioViz" target="_blank">@bioViz</a> em 24/08/2023</p>
+              <p class="card-text h5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempus velit eget quam facilisis, at molestie nisl tempus. Mauris ornare scelerisque nisl. Mauris et consectetur sem. Aliquam elementum pretium nulla, eu blandit nunc efficitur non. Aenean aliquet, justo non porta porta, lorem dui ultrices sem, eget aliquet massa justo sit amet turpis.</p>
+              <p class="card-text mb-1 h5"><a style="color: #000000;" href="https://instagram.com/bioViz" target="_blank">@bioViz</a> em 24/08/2023</p>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-dark btn-lg"><i style="font-size: 25px;" class="bi bi-plus-circle"></i> Informações</button>
+              </div>
             </div>
-            <button type="button" class="btn CardServicesFooter btn-lg"><i style="font-size: 25px;" class="bi bi-plus-circle"></i> Informações</button>
           </div>
         </div>
 
@@ -397,7 +401,7 @@
 
 
 
-
+<!--
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5">
           <div class="card">
             <div class="card-header h4"><strong>Análises Estatísticas</strong></div>
@@ -503,6 +507,10 @@
     </div>
     
     </main>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
     <script>
       $(document).ready(function() {
         console.log( "ready!" );
