@@ -48,11 +48,15 @@
           </li>
       </ul>
 -->
-      <div class="PagesSlides mt-5" style="height: 75vh;">
-        <img src="assets/bioViz.png" class="figure-img img-fluid rounded Logo" style="width: 45em;" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
+      <div class="PagesSlides mt-5">
+        <img src="assets/bioViz.png" class="figure-img img-fluid rounded Logo" style="width: 70vh;" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
         <!--<div style="font-size: 100%;" class="h1 text-white blockquote-footer mt-1 mb-1">by <a href="https://x.com/lprabelo" target="_blank">Luan Rabelo</a></div>-->
+        <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1 row-cols-xxl-1 gap-5 mt-5" style="align-items: center; justify-content: center;">
+          <button id="toPort" style="font-size: 1.5em;" class="btn btn-lg btn-outline-light col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-2" type="button" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300" data-aos-easing="ease-out-cubic">ver Portfólio</button>
+          <button id="toDesi" style="font-size: 1.5em;" class="btn btn-lg btn-outline-light col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mb-2" type="button" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300" data-aos-easing="ease-out-cubic">ver Designers</button>
+        </div>
       </div>
-      <div class="hr h1">by Luan Rabelo</div>
+      <!--<div class="hr h1">by Luan Rabelo</div>-->
     </header>
     <main>
 
@@ -88,7 +92,7 @@
     <!--
       Serviços:
     -->
-    <div class="hr h1">Portfólio</div>
+    <div id="Portfolio" class="hr h1">Portfólio</div>
 
       <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-4 row-cols-xxl-4">
 
@@ -465,7 +469,7 @@
     <!--
       Designers:
     -->
-    <div class="hr h1">Designers</div>
+    <div id="Designers" class="hr h1">Designers</div>
 
     <div class="d-flex justify-content-center">
 
@@ -513,9 +517,20 @@
       </script>
     <script>
       $(document).ready(function() {
-        console.log( "ready!" );
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        $("#toPort").click(function() {
+          $('html, body').animate({
+            scrollTop: $("#Portfolio").offset().top
+          }, 3500);
+        });
+        
+        $("#toDesi").click(function() {
+          $('html, body').animate({
+            scrollTop: $("#Designers").offset().top
+          }, 3500);
+        });
       });
 
     </script>

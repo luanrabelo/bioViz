@@ -55,12 +55,16 @@ a:hover::before {
 .card-footer, .card-header{
     background-color: #0F0E0E25;
 }
-.carousel-item{
-    transition: transform 0.5s ease-in-out !important;
+.carousel-item {
+  transition: transform 1.5s ease-in-out;
+}
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 1s 1.5s;
 }
 .PagesSlides {
-    display: flex;
-    height: 75vh;
+    height: 95vh;
+    display: flex wrap;
     align-items: center;
     justify-content: center;
 }
