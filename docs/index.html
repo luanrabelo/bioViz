@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="bioViz: Design Cientifico e Análises de dados">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <meta property="og:site_name" content="bioViz">
     <meta property="og:title" content="bioViz"/>
     <meta property="og:description" content="bioViz: Design Cientifico e Análises de dados" />
@@ -30,6 +32,65 @@
     </style>
   </head>
   <body class="bg-dark container-fluid">
+
+  <!-- Modal -->
+  <div class="modal fade" id="fullMaps" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h1 class="modal-title fs-5" id="">Portfólio de Mapas bioViz</h1>
+          <button type="button" class="btn btn-lh" data-bs-dismiss="modal" aria-label="Close"><i style="font-size: 25px; color: #FFFFFF;" class="bi bi-x-circle"></i></button>
+        </div>
+        <div class="modal-body">
+          <div id="Maps" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel" data-bs-touch="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/img/maps/MapOne.png" class="card-img img-fluid figure-img" width="75%;">
+                    <figcaption class="figure-caption text-start">Mapas produzidos pelo bioViz sob a Licença MIT</figcaption>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/maps/MapTwo.png" class="card-img img-fluid figure-img" width="75%;">
+                    <figcaption class="figure-caption text-start">Mapas produzidos pelo bioViz sob a Licença MIT</figcaption>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/maps/MapTree.png" class="card-img img-fluid figure-img" width="75%;">
+                    <figcaption class="figure-caption text-start">Mapas produzidos pelo bioViz sob a Licença MIT</figcaption>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/maps/MapFour.png" class="card-img img-fluid figure-img" width="75%;">
+                    <figcaption class="figure-caption text-start">Mapas produzidos pelo bioViz sob a Licença MIT</figcaption>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/maps/MapFive.png" class="card-img img-fluid figure-img" width="75%;">
+                    <figcaption class="figure-caption text-start">Mapas produzidos pelo bioViz sob a Licença MIT</figcaption>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/maps/MapSix.png" class="card-img img-fluid figure-img" width="75%;">
+                    <figcaption class="figure-caption text-start">Mapas produzidos pelo bioViz sob a Licença MIT</figcaption>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/maps/MapSeven.png" class="card-img img-fluid figure-img" width="75%;">
+                    <figcaption class="figure-caption text-start">Mapas produzidos pelo bioViz sob a Licença MIT</figcaption>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#Maps" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#Maps" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-lg btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <header class="text-center">
       <div class="hr h1">bioViz</div>
@@ -52,7 +113,7 @@
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 mb-1" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
         <blockquote class="blockquote">
           <div class="hr h1">Nature</div>
-          <div class="h1 text-white">"Gráficos sofisticados são necessários para comunicar os resultados de pesquisas cada vez mais complexas e transdisciplinares."</div>
+          <div style="line-height: 2;" class="h1 text-white">"Gráficos sofisticados são necessários para comunicar os resultados de pesquisas cada vez mais complexas e interdisciplinares."</div>
           <div class="blockquote-footer text-white mt-1"><a href="https://doi.org/10.1038/s42003-019-0516-1" target="_blank">Khoury et at. (2022)</a></div>
         </blockquote>
         <hr>
@@ -63,7 +124,8 @@
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 mb-1" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
         <blockquote class="blockquote">
           <div class="hr h1">bioViz</div>
-          <div class="h1 text-white">A bioViz fornece serviços de análises e processamento de dados, além de elaboração de figuras científicas, como mapas, gráficos e infográficos, utilizados para divulgação científica.</div>
+          <div style="line-height: 2;" class="h1 text-white">
+            A bioViz oferece <mark>soluções acessíveis</mark> para <mark>análises</mark> e <mark>processamento de dados</mark>, bem como geração de <mark>elementos visuais científicos</mark>, como <mark>mapas</mark>, <mark>gráficos</mark> e <mark>infográficos</mark>. Além disso, a plataforma auxilia na criação de figuras para <mark>divulgação científica</mark>, <mark>artigos</mark>, <mark>TCCs</mark>, <mark>dissertações</mark> e <mark>teses</mark>.</div>
         </blockquote>
         <hr>
       </div>
@@ -84,8 +146,10 @@
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 mb-1" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
         <blockquote class="blockquote">
           <div class="hr h1">Elaboração de Mapas</div>
-          <div class="h6 text-white blockquote-footer fst-italic">"Mapas são as cartografias do conhecimento, guiando a ciência através de territórios desconhecidos e revelando conexões invisíveis que expandem nosso entendimento do mundo."</div>
-          <div class="h2 text-white mt-1">Com bioViz, você pode criar mapas personalizados e acessíveis para seus dados. Você pode interagir com os mapas e escolher as cores, formas e símbolos que melhor representam cada informação.</div>
+          <div style="line-height: 2;" class="h2 text-white mt-1">
+            A bioViz se destaca na criação de mapas, com cores ajustadas para <mark>pessoas com daltonismo</mark>. Com enfoque <mark>científico e acessibilidade</mark>, nossos mapas atendem aos <mark>rigorosos padrões das revistas científicas</mark>, cumprindo exigentes requisitos e garantindo representações visualmente precisas e <mark>inclusivas</mark>.</div>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#fullMaps" class="btn btn-outline-light btn-lg w-100 mb-1"><i style="font-size: 25px;" class="bi bi-eye-fill"></i> ver Portfólio de Mapas</button>
+            <div class="h6 text-white blockquote-footer fst-italic mt-1">"Mapas são as cartografias do conhecimento, guiando a ciência através de territórios desconhecidos e revelando conexões invisíveis que expandem nosso entendimento do mundo."</div>
         </blockquote>
         <hr>
       </div>
@@ -100,7 +164,7 @@
 
       <div class="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-4 row-cols-xxl-4">
 
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-right" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Genomas Circulares</strong></div>
             <div class="card-body">
@@ -149,7 +213,7 @@
         <!--
           Mapas
         -->
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-left" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Mapas</strong></div>
             <div class="card-body">
@@ -206,7 +270,7 @@
         <!--
           BioInformática
         -->
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-right" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Bioinformática</strong></div>
             <div class="card-body">
@@ -255,7 +319,7 @@
         <!--
           Árvores Filogenéticas
         -->
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-left" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Árvores Filogenéticas</strong></div>
             <div class="card-body">
@@ -304,7 +368,7 @@
         <!--
           Dados Socioeconômicos
         -->
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-right" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Análises de dados Socioeconômicos</strong></div>
             <div class="card-body">
@@ -354,7 +418,7 @@
           dataSUS
         -->
        
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="flip-left" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mb-5" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300" data-aos-easing="ease-out-cubic">
           <div class="card">
             <div class="card-header h4"><strong>Análises dataSUS</strong></div>
             <div class="card-body">

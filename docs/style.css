@@ -67,8 +67,30 @@ a:hover::before {
 .PagesSlidesText {
     align-items: center;
     justify-content: center;
+    
 }
 
+mark {
+    animation: 7.5s linear 1s infinite alternate highlight;
+    background: linear-gradient(90deg, #FFFFFF 50%, #FFFFFF05 50%);
+    background-size: 200% 100%;
+    background-position: 100% 50%;
+    border-radius: 15px;
+}
+@keyframes highlight {
+0% {
+    background-position: 100% 0;
+    color: #FFFFFF;
+    }
+50% {
+    background-position: 0 0;
+    color: #000000;
+    }
+100% {
+    background-position: 0 0;
+    color: #000000;
+    }  
+}
 
 
 /*
